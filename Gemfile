@@ -18,6 +18,10 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   gem 'capybara'
+  gem 'database_cleaner'
+  gem 'factory_bot_rails'
+  gem 'forgery'
+  gem 'pry-rails'
   gem 'rspec-rails', '~> 3.7'
   gem 'rubocop', '~> 0.57.2', require: false
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers',
@@ -28,7 +32,6 @@ group :development do
   gem 'guard', require: false
   gem 'guard-rspec', require: false
   gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'pry-rails'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '>= 3.3.0'
