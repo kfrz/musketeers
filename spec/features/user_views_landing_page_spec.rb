@@ -9,5 +9,11 @@ feature 'User views landing page', type: :feature do
 
       expect(page).to have_content t('pages.home.header')
     end
+
+    it 'displays a link to view all gunslingers' do
+      visit root_path
+
+      expect(page).to have_link t('gunslingers.view_all')
+    end
   end
 end
