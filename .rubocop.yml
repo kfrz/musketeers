@@ -1,0 +1,15 @@
+Metrics/LineLength:
+  Max: 120
+
+Style/Documentation:
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
+    - 'app/helpers/application_helper.rb'
+    - 'app/mailers/application_mailer.rb'
+    - 'app/models/application_record.rb'
+    - 'config/application.rb'
+
+Style/MixinUsage:
+  Exclude:
+    - 'bin/**/*'
