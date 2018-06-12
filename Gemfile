@@ -17,9 +17,11 @@ gem 'turbolinks', '~> 5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
+  gem 'capybara'
   gem 'rspec-rails', '~> 3.7'
-  gem 'rspec_junit_formatter'
   gem 'rubocop', '~> 0.57.2', require: false
+  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers',
+                          branch: 'master' # use master until 4.0 is release
 end
 
 group :development do
@@ -28,6 +30,13 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '>= 3.3.0'
+end
+
+group :test do
+  gem 'chromedriver-helper'
+  gem 'rspec_junit_formatter'
+  gem 'selenium-webdriver'
+  gem 'simplecov', require: false
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
