@@ -1,3 +1,7 @@
+Metrics/BlockLength:
+  Exclude:
+    - 'Guardfile'
+    
 Metrics/LineLength:
   Max: 120
 
