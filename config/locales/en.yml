@@ -1,4 +1,8 @@
 en:
+  gunslingers:
+    index:
+      header: 'All Gunslingers'
+    view_all: 'Browse all Gunslingers'
   pages:
     home:
       header: 'Musketeers'
