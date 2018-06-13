@@ -1,9 +1,10 @@
 # Musketeers
 
+This application is publically available [via Heroku, found here](https://musketeers-production.herokuapp.com).
+
 ## Scenario
 
-The year is 2030. Elon Musk, the Marsfather, has declared intergalactic war against robot-kind. It is your duty as the Overseer to seek out and
-accredit an envoy of the galaxy's best Gunslingers to provide them with the
+The year is 2030. Elon Musk, the Marsfather, has declared intergalactic war against robot-kind. It is your duty as the Overseer to seek out and accredit an envoy of the galaxy's best Gunslingers to provide them with the
 acclaim necessary to defeat humanity's greatest enemy.
 
 Completed as a technical exercise during interview process for [Credly](0).
@@ -11,6 +12,8 @@ Completed as a technical exercise during interview process for [Credly](0).
 ## Dependencies
 
 This application was built with `ruby -v 2.4.4`, but should work with `ruby -v 2.1` or above.
+
+`postgresql -v 9.4` or greater is required.
 
 ## Installation
 
@@ -23,6 +26,8 @@ After the script has run, you can start the rails server with `bin/rails server`
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/kfrz/musketeers. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+See the [design document](https://github.com/kfrz/musketeers/blob/master/DESIGN.md) for more information, features roadmap, and architecture considerations.
 
 ## License
 
