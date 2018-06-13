@@ -13,6 +13,9 @@ abort('Rails is in Production environment!') if Rails.env.production?
 require 'rspec/rails'
 require 'shoulda/matchers'
 require 'capybara/rails'
+require 'webmock/rspec'
+
+WebMock.disable_net_connect!(allow_localhost: true)
 
 Dir[Rails.root.join('spec', 'support', '**', '*.rb')].sort.each { |file| require file }
 

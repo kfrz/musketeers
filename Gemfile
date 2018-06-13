@@ -16,6 +16,8 @@ gem 'turbolinks', '~> 5'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
+gem 'http'
+
 group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
@@ -42,6 +44,7 @@ group :test do
   gem 'rspec_junit_formatter'
   gem 'selenium-webdriver'
   gem 'simplecov', require: false
+  gem 'webmock'
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
