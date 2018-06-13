@@ -1,6 +1,6 @@
 <h2 class="title"><%= link_to gunslinger.full_name, gunslinger %> ( <%= gunslinger.email %> )</h2>
 
-<h3>Acclaimed? <%= gunslinger.acclaimed? %></h3>
+<h3><%= t('gunslingers.acclaimed?') + ' ' gunslinger.acclaimed? %></h3>
 
 <% if gunslinger.badge.present? %>
   <%= image_tag(gunslinger.badge['image_url'], size: '50x50') %>

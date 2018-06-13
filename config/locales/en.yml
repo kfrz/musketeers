@@ -1,8 +1,14 @@
 en:
+  badge:
+    issue: 'Issue %{template_name} Badge'
   gunslingers:
+    acclaimed?: 'Acclaimed?'
     index:
       header: 'All Gunslingers'
     view_all: 'Browse all Gunslingers'
+  navigation:
+    back: 'Back'
+    home: 'Home'
   pages:
     home:
       header: 'Musketeers'

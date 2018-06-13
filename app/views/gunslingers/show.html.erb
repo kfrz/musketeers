@@ -2,8 +2,8 @@
   <%= render partial: 'gunslinger', locals: { gunslinger: @gunslinger } %>
 
   <% badge_templates.each do |template| %>
-    <%= button_to "Issue #{template.name} Badge", badge_issuances_path(gunslinger_id: @gunslinger.id, template_id: template.id) %>
+    <%= button_to t('badge.issue', template_name: template.name ), badge_issuances_path(gunslinger_id: @gunslinger.id, template_id: template.id) %>
   <% end %>
 
-  <%= link_to 'Back', gunslingers_path %>
+  <%= link_to t('navigation.back'), gunslingers_path %>
 </div>
