@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-# This controller handles Gunslingers
 class GunslingersController < ApplicationController
   before_action :set_gunslinger, only: %i[show]
 

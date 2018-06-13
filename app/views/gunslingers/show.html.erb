@@ -1,1 +1,9 @@
-<%= @gunslinger.full_name %>
+<div class="container">
+  <%= render partial: 'gunslinger', locals: { gunslinger: @gunslinger } %>
+
+  <% badge_templates.each do |template| %>
+    <%= button_to "Issue #{template.name} Badge", badge_issuances_path(gunslinger_id: @gunslinger.id, template_id: template.id) %>
+  <% end %>
+
+  <%= link_to 'Back', gunslingers_path %>
+</div>

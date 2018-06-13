@@ -1,5 +1,9 @@
-<h1><%= t('gunslingers.index.header') %></h1>
+<h1 class="title"><%= t('gunslingers.index.header') %></h1>
 
-<% @gunslingers.each do |gunslinger| %>
-  <h2><%= link_to gunslinger.full_name, gunslinger %></h2>
-<% end %>
+<div class="container">
+  <% @gunslingers.each do |gunslinger| %>
+   <%= render partial: 'gunslinger', locals: { gunslinger: gunslinger } %>
+  <% end %>
+
+  <%= link_to 'Home', root_path %>
+</div>
