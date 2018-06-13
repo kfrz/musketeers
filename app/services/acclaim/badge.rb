@@ -3,37 +3,6 @@
 module Acclaim
   class Badge < Base
     attr_accessor :id, :image_url, :issued_at, :issued_to_first_name, :issued_to_last_name
-    # attr_accessor :accept_badge_url,
-    #               :alignments,
-    #               :badge_template,
-    #               :country,
-    #               :created_at,
-    #               :created_by,
-    #               :evidence,
-    #               :expires_at,
-    #               :expires_at_date,
-    #               :id,
-    #               :image,
-    #               :image_url,
-    #               :issued_at,
-    #               :issued_at_date,
-    #               :issued_to,
-    #               :issued_to_first_name,
-    #               :issued_to_last_name,
-    #               :issuer,
-    #               :issuer_earner_id,
-    #               :locale,
-    #               :printing_enabled,
-    #               :public,
-    #               :recipient_email,
-    #               :replacement_badge_id,
-    #               :revocation_reason,
-    #               :state,
-    #               :state_or_province,
-    #               :state_updated_at,
-    #               :suppress_badge_notification_email,
-    #               :updated_at,
-    #               :user
 
     def self.list
       # list all issued badges

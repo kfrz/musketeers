@@ -3,37 +3,6 @@
 module Acclaim
   class BadgeTemplate < Base
     attr_accessor :id, :name, :image_url
-    # attr_accessor :alignments,
-    #               :badge_template_activities,
-    #               :badges_count,
-    #               :certification,
-    #               :created_at,
-    #               :criteria_url,
-    #               :criteria_url_name,
-    #               :description,
-    #               :get_issue_count,
-    #               :global_activity_url,
-    #               :id,
-    #               :image,
-    #               :image_url,
-    #               :name,
-    #               :owner,
-    #               :public,
-    #               :recipient_type,
-    #               :recommendations,
-    #               :reporting_tags,
-    #               :required_badge_templates,
-    #               :show_badge_lmi,
-    #               :show_lmi_jobs,
-    #               :show_skill_tag_links,
-    #               :show_template_settings,
-    #               :skills,
-    #               :state,
-    #               :state_updated_at,
-    #               :template_type,
-    #               :updated_at,
-    #               :url,
-    #               :vanity_slug
 
     def self.list
       # list all badge templates
