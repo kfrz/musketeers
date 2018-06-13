@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+['Roland Deschain', 'Mordred Deschain', 'Elon Musk', 'Jeff Bezos'].each do |name|
+  first, last = name.downcase.split(' ')
+  tld = last.slice!(-2..-1)
+  email = "#{first}@#{last}.#{tld}"
+  Gunslinger.create(first_name: name.split[0], last_name: name.split[1], email: email)
+end
